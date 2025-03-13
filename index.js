@@ -2,12 +2,13 @@ const roll_dice = () => {
 
     const DiceResult = document.getElementById("DiceResult");
     DiceResult.textContent = "Rolling dice...";
-
+    const DiceImages = document.getElementById("DiceImages");
+    DiceImages.innerHTML = "";
+    
     setTimeout( function() {
 
         const NumOfDice = document.getElementById("NumOfDice").value;
         DiceResult.textContent = "";
-        const DiceImages = document.getElementById("DiceImages");
         const values = [];
         const images = [];
 
